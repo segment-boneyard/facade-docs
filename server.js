@@ -28,6 +28,15 @@ app.use(serve('lib'));
 app.use(parser());
 app.use(logger());
 
+// Allow front end Angular to use HTML5 History API
+app.use(function *(next){
+	 if (this.url[0] !== '#') {
+    this.status = 301;
+    this.redirect('/#' + this.url);
+  }
+  yield next;
+});
+
 /**
  * Mount Routes
  */

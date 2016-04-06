@@ -1,0 +1,10 @@
+{	
+	"bigTitle": "Facade",
+	"description": "Facade is a library of helper functions that makes reading and writing Segment integration code delightful.",
+	"content": "As you might guess, functions such as `track.event()`, `track.properties()`, and `track.userId()` are all Facade functions. The names of the functions allow you to quickly understand what pieces of data we are mapping.\n\nEvery `Integration` object's `prototype` is extended with Facade functions, meaning that you'll be able to use the Facade across all of our other various types of messages such as `.page()`, `.group()`, and `.identify()` calls.\n\nUnderstanding the full potential of the facade will elevate your techinical knowledge of our integration code tremendously!",
+	"codeDesc": "Now the following could be a sample Integration `mapper.js` that would take the message above and return a formatted payload:",
+	"code": "function (track){\n   return {\n    event: track.event(),\n    properties: track.properties(),\n    time: track.timestamp(),\n    customer_properties: {\n      $id: track.userId(),\n      $name: track.name(),\n      $email: track.email()\n    }\n   };\n};",
+	"sampleDesc": "Let's say that we receive a simple `.track()` call:",
+	"sample": "{\n  \"type\": \"track\",\n  \"userId\": \"813\",\n  \"event\": \"Newsletter Subscribed\",\n  \"properties\":{\n    \"title\":\"Product Updates\",\n    \"email\": \"glenncoco@meangirls.com\",\n    \"name\":\"Glenn Coco\"\n  }\n}",
+	"supportedPlatform": 0
+}

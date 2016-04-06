@@ -1,0 +1,130 @@
+{
+	"list": [
+		{ 
+			"category": "Intro",
+			"sections": [],
+			"active": false
+		},
+		{
+			"category": "Common",
+			"sections": [
+				".action()",
+				".active()",
+				".anonymousId() or .sessionId()",
+				".channel()", 
+				".country()",
+				".device()", 
+				".enabled(integration)",
+				".field()",
+				".groupId()",
+				".integrations()",
+				".ip()",
+				".json()",
+				".library()",
+				".options(integration)",
+				".proxy()",
+				".region()",
+				".timestamp()",
+				".timezone()",
+				".traits()",
+				".type()",
+				".userAgent()",
+				".userId()",
+				".state()",
+				".street()",
+				".city()",
+				".zip()"
+			],
+			"active": false
+		},
+		{ 
+			"category": "Page",
+			"sections": [
+				".category()",
+				".event()",
+				".fullName()",
+				".name()",
+				".path()",
+				".properties(aliases)",
+				".referrer()",
+				".title()",
+				".track()",
+				".url()"
+			]
+		},
+		{ 
+			"category": "Identify",
+			"sections": [
+				".age()",
+				".address()",
+				".avatar()",
+				".birthday()",
+				".companyCreated()",
+				".created()",
+				".description()",
+				".email()",
+				".firstName()",
+				".gender()",
+				".lastName()",
+				".name()",
+				".phone()",
+				".phones()",
+				".position()",
+				".traits(aliases)",
+				".uid()",
+				".username()",
+				".website()",
+				".websites()"
+			],
+			"active": false
+		},
+		{
+			"category": "Track",
+			"sections": [
+				".event()",
+				".category()",
+				".cents()",
+				".coupon()",
+				".currrency()",
+				".description()",
+				".disconut()",
+				".email()",
+				".id()",
+				".identify()",
+				".name()",
+				".orderId()",
+				".plan()",
+				".price()",
+				".products()",
+				".properties(aliases)",
+				".quantity()",
+				".query()",
+				".referrer()",
+				".repeat()",
+				".revenue()",
+				".shipping()",
+				".subtotal()",
+				".sku()",
+				".tax()",
+				".total()",
+				".username()",
+				".value()"
+			],
+			"active": false
+		},
+		{
+			"category": "Group",
+			"sections": [
+				".email()",
+				".created()",
+				".employees()",
+				".groupId()",
+				".industry()",
+				".name()",
+				".properties()",
+				".traits(aliases)"
+			],
+			"active": false
+		}
+	]
+}

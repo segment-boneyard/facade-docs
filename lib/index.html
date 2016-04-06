@@ -2,17 +2,18 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Angular App</title>
+		<title>Facade Documentation</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
 
 		<!-- Load JS Dependencies -->
 		<script src="vendors/jquery-1.11.3.min.js"></script>
+		<script src="vendors/highlight.pack.js"></script>
 
 		<!-- Load CSS Vendors -->
 		<link rel="stylesheet" href="vendors/normalize.css">
 		<link rel="stylesheet" href="vendors/bootstrap-grid.css">
-
+		<link rel="stylesheet" href="vendors/styles/tomorrow.css">
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/main.css">
 
@@ -21,24 +22,26 @@
 
 		<!-- Angular Packages -->
 		<script src="vendors/angular-ui-router.min.js"></script>
-		<script src="vendors/ngStorage.min.js"></script>
-		<script src="vendors/angular-cookies.min.js"></script>
 
 		<!-- Angular Modules -->
-		
+		<script src="components/main/module.js"></script>
+
 		<!-- Angular Controllers -->
+		<script src="components/main/ctrls.js"></script>
 		
 		<!-- Angular States -->
 
 		<!-- Angular Factories -->
+		<script src="components/main/factories.js"></script>
 
 		<!-- Angular Services -->
 
 		<!-- Angular Directives -->
+		<script src="components/main/services.js"></script>
 
 		<!-- Initialize Angular -->
 		<script src="js/app.js"></script>
-
+		<base href="/">
 	</head>
 	<body ng-app="app">
 		<main ui-view class="container-fluid"></main>

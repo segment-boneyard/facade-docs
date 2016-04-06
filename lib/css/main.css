@@ -1,0 +1,49 @@
+/* Alignment */
+
+.ta-c {
+	text-align: center;
+}
+
+/* Padding */
+
+.pt-lg {
+	padding-top: 10%;
+}
+
+/* Navbar */
+
+.navbar {
+	padding: 10px;
+}
+
+.navbar ul {
+	list-style: none;
+}
+
+.navbar li {
+	color: blue;
+}
+
+.navbar li:hover {
+	cursor: pointer;
+}
+
+/* Debug */
+
+.debug {
+	border: 1px solid red;
+}
+
+/* Colors */
+
+.active {
+	color: green !important;
+}
+
+/* Normalize */
+
+pre {
+	white-space:pre-wrap;
+	font-family: inherit;
+	margin: 0;
+}

@@ -1,0 +1,51 @@
+{
+	"groupId": {
+		"title": "groupId",
+		"desc": "Returns the `groupId`.",
+		"code": ".groupId();",
+		"output": "0e8c78ea9d97a7b8185e8632"
+	},
+	"created": {
+		"title": "created",
+		"desc": "Returns the `traits.createdAt` and falls back on `traits.created`, `properties.createdAt` and `properties.created`. Note that it will return a `Date` object.",
+		"code": ".created();",
+		"output": "undefined"
+	},
+	"email": {
+		"title": "email",
+		"desc": "Tries to return the `traits.email` and if it is not defined, it will check the `groupId`  and return that if it is a valid email.",
+		"code": ".email();",
+		"output": "undefined"
+	},
+	"traits(aliases)": {
+		"title": "traits(aliases)",
+		"desc": "Returns all the `traits`. You can also pass an optional object defining aliases. Note that the Facade will also add `traits.id` which is the same as `groupId`.",
+		"code": ".traits({ plan: \"tier\" });;",
+		"output": "{  \r\n   \"id\": \"0e8c78ea9d97a7b8185e8632\",\r\n   \"name\":\"Initech\",\r\n   \"industry\":\"Technology\",\r\n   \"employees\":329,\r\n   \"plan\":\"enterprise\",\r\n   \"total billed\":830\r\n}"
+	},
+	"name": {
+		"title": "name",
+		"desc": "Returns the `traits.name`.",
+		"code": ".name();",
+		"output": "Initech"
+	},
+	"industry": {
+		"title": "industry",
+		"desc": "Returns `traits.industry`.",
+		"code": ".industry();",
+		"output": "Technology"
+	},
+	"employees": {
+		"title": "employees",
+		"desc": "Returns `traits.employees`.",
+		"code": ".employees();",
+		"output": "Technology"
+	},
+	"properties": {
+		"title": "properties",
+		"desc": "Returns the `traits` and fallsback on `properties` or `{}`.",
+		"code": ".properties();",
+		"output": "{  \r\n   \"id\": \"0e8c78ea9d97a7b8185e8632\",\r\n   \"name\":\"Initech\",\r\n   \"industry\":\"Technology\",\r\n   \"employees\":329,\r\n   \"plan\":\"enterprise\",\r\n   \"total billed\":830\r\n}"
+	},
+	"sample": "{\r\n  \"type\": \"group\",\r\n  \"groupId\": \"0e8c78ea9d97a7b8185e8632\",\r\n  \"traits\": {\r\n    \"name\": \"Initech\",\r\n    \"industry\": \"Technology\",\r\n    \"employees\": 329,\r\n    \"plan\": \"enterprise\",\r\n    \"total billed\": 830\r\n  }\r\n}"
+}

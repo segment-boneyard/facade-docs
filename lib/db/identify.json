@@ -3,7 +3,7 @@
 		"title": "traits(aliases)",
 		"desc": "Returns all the `traits`. You can also pass an optional object defining aliases. Note that the Facade will also add `traits.id` which is the same as `userId`.",
 		"code": ".traits({ plan: \"tier\" });;",
-		"output": "{  \r\n   \"name\":\"Peter Gibbons\",\r\n   \"email\":\"peter@initech.com\",\r\n   \"tier\":\"premium\",\r\n   \"logins\":5\r\n}"
+		"output": "{  \r\n   \"id\": \"111\",\r\n   \"name\":\"Peter Gibbons\",\r\n   \"email\":\"peter@initech.com\",\r\n   \"tier\":\"premium\",\r\n   \"logins\":5\r\n}"
 	},
 	"email": {
 		"title": "email",

@@ -1,0 +1,63 @@
+{
+	"category": {
+		"title": "category",
+		"desc": "Returns the `category` if it has been set.",
+		"code": ".category();",
+		"output": "Specs"
+	},
+	"name": {
+		"title": "name",
+		"desc": "Returns the `name` if it has been set.",
+		"code": ".name();",
+		"output": "Page call"
+	},
+	"title": {
+		"title": "title",
+		"desc": "Returns properties.title  aka <title> of the page.",
+		"code": ".title();",
+		"output": "Spec: Page - Segment"
+	},
+	"path": {
+		"title": "path",
+		"desc": "Returns `properties.path`.",
+		"code": ".path();",
+		"output": "/docs/spec/page/"
+	},
+	"url": {
+		"title": "url",
+		"desc": "Returns the `properties.url`.",
+		"code": ".url();",
+		"output": "https://segment.com/docs/spec/page/"
+	},
+	"referrer": {
+		"title": "referrer",
+		"desc": "Returns the `properties.referrer` and falls back on `context.referrer.url`.",
+		"code": ".referrer();",
+		"output": "https://www.google.com"
+	},
+	"properties(aliases)": {
+		"title": "properties(aliases)",
+		"desc": "Returns all the properties , including the top level name and category. You can also pass an optional object defining aliases.",
+		"code": ".properties({ search: 'query' });",
+		"output": "\r\n{\r\n  \"path\":\"\/docs\/spec\/page\/\",\r\n  \"referrer\":\"\",\r\n  \"query\":\"\",\r\n  \"title\":\"Spec: Page - Segment\",\r\n  \"url\":\"https:\/\/segment.com\/docs\/spec\/page\/\",\r\n  \"name\": \"Page call\",\r\n  \"category\": \"Specs\"\r\n}"
+	},
+	"fullName": {
+		"title": "fullName",
+		"desc": "Returns a string that includes both `category` and `name`. Returns only `name` if category is not defined.",
+		"code": ".fullName()",
+		"output": "Specs Page call"
+	},
+	"event": {
+		"title": "event",
+		"desc": "Returns `Viewed <name> Page`  if `name` is defined, otherwise returns `Loaded a Page`.",
+		"code": ".event('Teemo');",
+		"output": "Viewed Teemo Page"
+	},
+	"track": {
+		"title": "track",
+		"desc": "Need to quickly convert this call into a `Track` message? This will return a `Track` facade object where the event `name` is the `.event(name)` of the page call.",
+		"code": ".track();",
+		"output": "Returns a '.track()' call where event is 'Viewed Teemo Page' and has all the properties of the page call such as title, url, path, etc."
+	},
+	"sample": "{  \r\n   \"context\":{  \r\n      \"page\":{  \r\n         \"path\":\"\/docs\/spec\/page\/\",\r\n         \"referrer\":\"\",\r\n         \"search\":\"\",\r\n         \"title\":\"Spec: Page - Segment\",\r\n         \"url\":\"https:\/\/segment.com\/docs\/spec\/page\/\"\r\n      },\r\n      \"userAgent\":\"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/49.0.2623.87 Safari\/537.36\",\r\n      \"library\":{  \r\n         \"name\":\"analytics.js\",\r\n         \"version\":\"2.11.1\"\r\n      }\r\n   },\r\n   \"integrations\":{  \r\n\r\n   },\r\n   \"properties\":{  \r\n      \"path\":\"\/docs\/spec\/page\/\",\r\n      \"referrer\":\"\",\r\n      \"search\":\"\",\r\n      \"title\":\"Spec: Page - Segment\",\r\n      \"url\":\"https:\/\/segment.com\/docs\/spec\/page\/\"\r\n   },\r\n   \"anonymousId\":\"0e86dbe8-6cc4-4453-a292-050b5ed120ae\",\r\n   \"timestamp\":\"2016-03-22T04:21:39.612Z\",\r\n   \"type\":\"page\",\r\n   \"name\":\"Page call\",\r\n   \"category\":\"Specs\",\r\n   \"userId\":\"ogK9TnXEGm\",\r\n   \"sentAt\":\"2016-03-22T04:21:39.614Z\",\r\n   \"messageId\":\"ajs-538d13d85d03c4433e56198060498588\"\r\n}"
+}

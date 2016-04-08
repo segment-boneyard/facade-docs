@@ -3,6 +3,12 @@
 		"title": "action",
 		"desc": "Returns the `type` of message.",
 		"code": ".action();",
+		"output": "track"
+	},
+	"type": {
+		"title": "type",
+		"desc": "Returns the `type` of message.",
+		"code": ".type();",
 		"output": "\"track\""
 	},
 	"proxy": {

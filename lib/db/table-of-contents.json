@@ -10,7 +10,8 @@
 			"sections": [
 				".action()",
 				".active()",
-				".anonymousId() or .sessionId()",
+				".anonymousId()",
+				".sessionId()",
 				".channel()", 
 				".country()",
 				".device()", 

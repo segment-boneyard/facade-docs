@@ -69,13 +69,11 @@
 				".lastName()",
 				".name()",
 				".phone()",
-				".phones()",
 				".position()",
 				".traits(aliases)",
 				".uid()",
 				".username()",
-				".website()",
-				".websites()"
+				".website()"
 			],
 			"active": false
 		},

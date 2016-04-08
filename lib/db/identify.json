@@ -1,7 +1,7 @@
 {
 	"traits(aliases)": {
 		"title": "traits(aliases)",
-		"desc": "Returns all the `traits`. You can also pass an optional object defining aliases.",
+		"desc": "Returns all the `traits`. You can also pass an optional object defining aliases. Note that the Facade will also add `traits.id` which is the same as `userId`.",
 		"code": ".traits({ plan: \"tier\" });;",
 		"output": "{  \r\n   \"name\":\"Peter Gibbons\",\r\n   \"email\":\"peter@initech.com\",\r\n   \"tier\":\"premium\",\r\n   \"logins\":5\r\n}"
 	},
@@ -107,5 +107,5 @@
 		"code": ".birthday();",
 		"output": "undefined"
 	},
-	"sample": "{  \r\n   \"context\":{  \r\n      \"page\":{  \r\n         \"path\":\"\/docs\/spec\/page\/\",\r\n         \"referrer\":\"\",\r\n         \"search\":\"\",\r\n         \"title\":\"Spec: Page - Segment\",\r\n         \"url\":\"https:\/\/segment.com\/docs\/spec\/page\/\"\r\n      },\r\n      \"userAgent\":\"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/49.0.2623.87 Safari\/537.36\",\r\n      \"library\":{  \r\n         \"name\":\"analytics.js\",\r\n         \"version\":\"2.11.1\"\r\n      }\r\n   },\r\n   \"integrations\":{  \r\n\r\n   },\r\n   \"properties\":{  \r\n      \"path\":\"\/docs\/spec\/page\/\",\r\n      \"referrer\":\"\",\r\n      \"search\":\"\",\r\n      \"title\":\"Spec: Page - Segment\",\r\n      \"url\":\"https:\/\/segment.com\/docs\/spec\/page\/\"\r\n   },\r\n   \"anonymousId\":\"0e86dbe8-6cc4-4453-a292-050b5ed120ae\",\r\n   \"timestamp\":\"2016-03-22T04:21:39.612Z\",\r\n   \"type\":\"page\",\r\n   \"name\":\"Page call\",\r\n   \"category\":\"Specs\",\r\n   \"userId\":\"ogK9TnXEGm\",\r\n   \"sentAt\":\"2016-03-22T04:21:39.614Z\",\r\n   \"messageId\":\"ajs-538d13d85d03c4433e56198060498588\"\r\n}"
+	"sample": "{  \r\n   \"anonymousId\":\"507f191e810c19729de860ea\",\r\n   \"channel\":\"browser\",\r\n   \"context\":{  \r\n      \"ip\":\"8.8.8.8\",\r\n      \"userAgent\":\"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/40.0.2214.115 Safari\/537.36\"\r\n   },\r\n   \"integrations\":{  \r\n      \"All\":true,\r\n      \"Mixpanel\":false,\r\n      \"Salesforce\":false\r\n   },\r\n   \"messageId\":\"022bb90c-bbac-11e4-8dfc-aa07a5b093db\",\r\n   \"receivedAt\":\"2015-02-23T22:28:55.387Z\",\r\n   \"sentAt\":\"2015-02-23T22:28:55.111Z\",\r\n   \"timestamp\":\"2015-02-23T22:28:55.111Z\",\r\n   \"traits\":{  \r\n      \"name\":\"Peter Gibbons\",\r\n      \"age\":24,\r\n      \"email\":\"peter@initech.com\",\r\n      \"plan\":\"premium\",\r\n      \"logins\":5,\r\n      \"createdAt\":\"2015-02-23T22:28:55.111Z\"\r\n   },\r\n   \"type\":\"identify\",\r\n   \"userId\":\"97980cfea0067\",\r\n   \"version\":\"1.1\"\r\n}"
 }

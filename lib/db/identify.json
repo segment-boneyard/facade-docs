@@ -1,3 +1,111 @@
 {
-	"fuck": "you"
+	"traits(aliases)": {
+		"title": "traits(aliases)",
+		"desc": "Returns all the `traits`. You can also pass an optional object defining aliases.",
+		"code": ".traits({ plan: \"tier\" });;",
+		"output": "{  \r\n   \"name\":\"Peter Gibbons\",\r\n   \"email\":\"peter@initech.com\",\r\n   \"tier\":\"premium\",\r\n   \"logins\":5\r\n}"
+	},
+	"email": {
+		"title": "email",
+		"desc": "Tries to return the `traits.email` and if it is not defined, it will check the `userId`  and return that if it is a valid email.",
+		"code": ".email();",
+		"output": "peter@initech.com"
+	},
+	"created": {
+		"title": "created",
+		"desc": "Returns the `traits.created` and falls back on `traits.createdAt`.",
+		"code": ".created();",
+		"output": "Spec: Page - Segment"
+	},
+	"companyCreated": {
+		"title": "companyCreated",
+		"desc": "Returns `traits.company.created` and falls back on `traits.company.createdAt` and returns a `Date` object of it.",
+		"code": ".companyCreated();",
+		"output": "undefined"
+	},
+	"name": {
+		"title": "name",
+		"desc": "Returns `traits.name` or optionally combines `traits.firstName` and `traits.lastName` if `traits.name` is not defined.",
+		"code": ".name();",
+		"output": "Peter Gibbons"
+	},
+	"firstName": {
+		"title": "firstName",
+		"desc": "Returns `traits.firstName`. If only `traits.name` is available, it will split it and give you the first name.",
+		"code": ".firstName();",
+		"output": "Peter"
+	},
+	"lastName": {
+		"title": "lastName",
+		"desc": "Returns `traits.lastName`. If only `traits.name` is available, it will split it and give you the last name.",
+		"code": ".lastName();",
+		"output": "Gibbons"
+	},
+	"uid": {
+		"title": "uid",
+		"desc": "Returns the current user’s `userId`, and falls back on `traits.username` then `traits.email`.",
+		"code": ".uid();",
+		"output": "97980cfea0067"
+	},
+	"description": {
+		"title": "description",
+		"desc": "Returns `traits.description` and falls back on `traits.background`.",
+		"code": ".description()",
+		"output": "undefined"
+	},
+	"age": {
+		"title": "age",
+		"desc": "Returns `traits.age` and if not will fall back on a calculated birthday based no `traits.birthday`.",
+		"code": ".age();",
+		"output": "24"
+	},
+	"avatar": {
+		"title": "avatar",
+		"desc": "Returns `traits.avatar` or `traits.photoUrl` or `traits.avatarUrl`.",
+		"code": ".avatar();",
+		"output": "undefined"
+	},
+	"position": {
+		"title": "position",
+		"desc": "Returns `traits.position` and falls back on `traits.jobTitle`.",
+		"code": ".position();",
+		"output": "undefined"
+	},
+	"username": {
+		"title": "username",
+		"desc": "Returns `traits.username`.",
+		"code": ".username();",
+		"output": "undefined"
+	},
+	"website": {
+		"title": "website",
+		"desc": "Returns `traits.website`.",
+		"code": ".website();",
+		"output": "undefined"
+	},
+	"phone": {
+		"title": "phone",
+		"desc": "Returns `traits.phone`.",
+		"code": ".phone();",
+		"output": "undefined"
+	},
+	"address": {
+		"title": "address",
+		"desc": "Returns `traits.address`.",
+		"code": ".address();",
+		"output": "undefined"
+	},
+	"gender": {
+		"title": "gender",
+		"desc": "Returns `traits.gender`.",
+		"code": ".gender();",
+		"output": "undefined"
+	},
+	"birthday": {
+		"title": "birthday",
+		"desc": "Returns `traits.birthday`.",
+		"code": ".birthday();",
+		"output": "undefined"
+	},
+	"sample": "{  \r\n   \"context\":{  \r\n      \"page\":{  \r\n         \"path\":\"\/docs\/spec\/page\/\",\r\n         \"referrer\":\"\",\r\n         \"search\":\"\",\r\n         \"title\":\"Spec: Page - Segment\",\r\n         \"url\":\"https:\/\/segment.com\/docs\/spec\/page\/\"\r\n      },\r\n      \"userAgent\":\"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/49.0.2623.87 Safari\/537.36\",\r\n      \"library\":{  \r\n         \"name\":\"analytics.js\",\r\n         \"version\":\"2.11.1\"\r\n      }\r\n   },\r\n   \"integrations\":{  \r\n\r\n   },\r\n   \"properties\":{  \r\n      \"path\":\"\/docs\/spec\/page\/\",\r\n      \"referrer\":\"\",\r\n      \"search\":\"\",\r\n      \"title\":\"Spec: Page - Segment\",\r\n      \"url\":\"https:\/\/segment.com\/docs\/spec\/page\/\"\r\n   },\r\n   \"anonymousId\":\"0e86dbe8-6cc4-4453-a292-050b5ed120ae\",\r\n   \"timestamp\":\"2016-03-22T04:21:39.612Z\",\r\n   \"type\":\"page\",\r\n   \"name\":\"Page call\",\r\n   \"category\":\"Specs\",\r\n   \"userId\":\"ogK9TnXEGm\",\r\n   \"sentAt\":\"2016-03-22T04:21:39.614Z\",\r\n   \"messageId\":\"ajs-538d13d85d03c4433e56198060498588\"\r\n}"
 }

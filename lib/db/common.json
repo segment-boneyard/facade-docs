@@ -1,0 +1,29 @@
+{
+	"action": {
+		"title": "action",
+		"desc": "Returns the `type` of message.",
+		"code": ".action();",
+		"output": "\"track\""
+	},
+	"proxy": {
+		"desc": "Use this to fetch basically any property within the message, including nested fields.",
+		"code": ".proxy('context.app.version');",
+		"output": "1.0"
+	},
+	"field": {
+		"desc": "Returns a top level field. Generally speaking, you should use .proxy() instead in most cases.",
+		"code": ".field('event');",
+		"output": "Damn Daniel"
+	},
+	"json": {
+		"desc": "Returns a basic JSON object of the messsage",
+		"code": ".json();",
+		"output": "Same JSON payload"
+	},
+	"options(integration)": {
+		"desc": "Returns the options of whatever integration you pass in. It will return `undefined` if the integration is not enabled. Note that `context` is same as `options`!",
+		"code": "options('Intercom');",
+		"output": "{ unsubscribedFromEmails: true }"
+	},
+	"sample": "\r\n{\r\n    \"anonymousId\": \"36437481-6d1c-4936-aa3a-cf646099d581\",\r\n    \"type\": \"track\",\r\n    \"timestamp\": \"2016\",\r\n    \"event\": \"Damn Daniel\",\r\n    \"userId\": \"111\",\r\n    \"properties\": {\r\n      \"shoes\": \"White Vans\"\r\n    },\r\n    \"integrations\": {\r\n      \"All\": true,\r\n      \"Mixpanel\": false,\r\n      \"Intercom\": {\r\n        \"unsubscribedFromEmails\": true\r\n      }\r\n    },\r\n    \"context\": {\r\n     \"ip\": \"10.0.0.2\",\r\n     \"device\": {\r\n        \"id\": \"B5372DB0-C21E-11E4-8DFC-AA07A5B093DB\",\r\n        \"advertisingId\": \"7A3CBEA0-BDF5-11E4-8DFC-AA07A5B093DB\",\r\n        \"adTrackingEnabled\": true,\r\n        \"manufacturer\": \"Apple\",\r\n        \"model\": \"iPhone7,2\",\r\n        \"name\": \"maguro\",\r\n        \"type\": \"iOS\",\r\n        \"token\": \"ff15bc0c20c4aa6cd50854ff165fd265c838e5405bfeb9571066395b8c9da449\"\r\n      },\r\n      \"app\": {\r\n        \"name\": \"Test\",\r\n        \"version\": \"1.0\"\r\n      },\r\n      \"os\": {\r\n        \"name\": \"Android\",\r\n        \"version\": \"7.0\"\r\n      },\r\n      \"network\": {\r\n        \"carrier\": \"some-carrier\",\r\n        \"wifi\": true\r\n      },\r\n      \"locale\": \"en-US\",\r\n      \"library\": {\r\n        \"name\": \"analytics.js\",\r\n        \"version\": \"2.11.1\"\r\n      },\r\n     \"timezone\": \"Europe\/Amsterdam\",\r\n     \"userAgent\": \"Mozilla\/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit\/601.1.46 (KHTML, like Gecko) Version\/9.0 Mobile\/13B143 Safari\/601.1\"\r\n    }\r\n  }"
+}

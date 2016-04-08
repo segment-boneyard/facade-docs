@@ -13,19 +13,13 @@
 
 	<!-- Hero Title Component -->
 	<div class="col-xs-9">
-		<h1>{{ facade.data.bigTitle }}</h1>
-		<p>{{ facade.data.description }}</p>
+		<h1>{{ facade.data.title }}</h1>
+		<p>{{ facade.data.desc }}</p>
 	</div>
 	<div class="col-xs-9">
-		<div class="col-xs-9">
-			<pre><p>{{ facade.data.sampleDesc }}</p></pre>
-			<pre><code highlight-syntax>{{ facade.data.sample }}</code></pre>
-			<pre><p>{{ facade.data.codeDesc}}</p></pre>
-			<pre><code highlight-syntax>{{ facade.data.code }}</code></pre>
-			<pre><p id="content">{{ facade.data.content }}</p></pre>
-		</div>
-		<div class="col-xs-3">
-			<h1>{{ facade.data.supportedPlatforms}}</h1>
-		</div>
+		<pre><code highlight-syntax>{{ facade.data.code }}</code></pre>
+		<p ng-show="facade.data.content">{{ facade.data.content }}</p>
+		<p ng-show="facade.data.output">Output: <code highlight-syntax>{{ facade.data.output }}</code></p>
+		<pre><code highlight-syntax>{{ facade.data.sample }}</code></pre>
 	</div>
 </div>

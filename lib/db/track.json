@@ -3,19 +3,19 @@
 		"title": "event",
 		"desc": "Returns the `event` of message.",
 		"code": ".event();",
-		"output": "Damn Daniel"
+		"output": "'Damn Daniel'"
 	},
 	"value": {
 		"title": "value",
 		"desc": "Returns the `properties.value`.",
 		"code": ".value();",
-		"output": "15 min of fame"
+		"output": "'15 min of fame'"
 	},
 	"category": {
 		"title": "category",
 		"desc": "Returns the `properties.category`.",
 		"code": ".category();",
-		"output": "Vine"
+		"output": "'Vine'"
 	},
 	"id": {
 		"title": "id",
@@ -87,7 +87,7 @@
 		"title": "plan",
 		"desc": "Returns the `properties.plan`.",
 		"code": ".plan();",
-		"output": "Same JSON payload"
+		"output": "Same JSON payload as below"
 	},
 	"orderId": {
 		"title": "orderId",
@@ -117,7 +117,7 @@
 		"title": "currency",
 		"desc": "Returns the `properties.currency` and falls back on \"USD\"",
 		"code": ".currency();",
-		"output": "USD"
+		"output": "'USD'"
 	},
 	"referrer": {
 		"title": "referrer",
@@ -141,7 +141,7 @@
 		"title": "username",
 		"desc": "Returns the `traits.username` and falls back in the order of `properties.username`, `userId`, and `anonymousId`.",
 		"code": ".username();",
-		"output": "111"
+		"output": "'111'"
 	},
 	"email": {
 		"title": "email",

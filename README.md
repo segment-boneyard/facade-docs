@@ -2,4 +2,4 @@
 
 An API reference for `segmentio/facade`!
 
-Link: facade.herokuapp.com
+Link: segment-facade.herokuapp.com

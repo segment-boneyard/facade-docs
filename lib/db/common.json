@@ -3,31 +3,31 @@
 		"title": "action",
 		"desc": "Returns the `type` of message.",
 		"code": ".action();",
-		"output": "track"
+		"output": "'track'"
 	},
 	"type": {
 		"title": "type",
 		"desc": "Returns the `type` of message.",
 		"code": ".type();",
-		"output": "\"track\""
+		"output": "'track'"
 	},
 	"proxy": {
 		"title": "proxy",
 		"desc": "Use this to fetch basically any property within the message, including nested fields.",
 		"code": ".proxy('context.app.version');",
-		"output": "1.0"
+		"output": "'1.0'"
 	},
 	"field": {
 		"title": "field",
 		"desc": "Returns a top level field. Generally speaking, you should use .proxy() instead in most cases.",
 		"code": ".field('event');",
-		"output": "Damn Daniel"
+		"output": "'Damn Daniel'"
 	},
 	"json": {
 		"title": "json",
 		"desc": "Returns a basic JSON object of the messsage",
 		"code": ".json();",
-		"output": "Same JSON payload"
+		"output": "Same JSON payload as below"
 	},
 	"options(integration)": {
 		"title": "options(integration)",
@@ -45,7 +45,7 @@
 		"title": "integrations",
 		"desc": "Returns all integrations options",
 		"code": ".integrations();",
-		"output": "\r\n{\r\n  \"All\": true,\r\n  \"Mixpanel\": false,\r\n  \"Intercom\": {\r\n    \"unsubscribedFromEmails\": true\r\n  }\r\n}"
+		"output": "{\r\n  \"All\": true,\r\n  \"Mixpanel\": false,\r\n  \"Intercom\": {\r\n    \"unsubscribedFromEmails\": true\r\n  }\r\n}"
 	},
 	"active": {
 		"title": "active",
@@ -57,13 +57,13 @@
 		"title": "anonymousId",
 		"desc": "Self explanatory! :)",
 		"code": ".anonymousId();",
-		"output": "36437481-6d1c-4936-aa3a-cf646099d581"
+		"output": "'36437481-6d1c-4936-aa3a-cf646099d581'"
 	},
 	"sessionId": {
 		"title": "sessionId",
 		"desc": "Same as anonymousId.",
 		"code": ".sessionId();",
-		"output": "36437481-6d1c-4936-aa3a-cf646099d581"
+		"output": "'36437481-6d1c-4936-aa3a-cf646099d581'"
 	},
 	"groupId": {
 		"title": "groupId",
@@ -79,7 +79,7 @@
 	},
 	"library": {
 		"title": "library",
-		"desc": "Returns a dandy object containing the library `name` and `version`. If library is not defined (which is normally not the case since our libraries automatically collect this context), it will return `version` as `null` and `name` as `unknown`.",
+		"desc": "Returns an object containing the library `name` and `version`. If library is not defined (which is normally not the case since our libraries automatically collect this context), it will return `version` as `null` and `name` as `unknown`.",
 		"code": ".library();",
 		"output": "{ name: 'analytics.js', version: '2.11.1' }"
 	},
@@ -87,75 +87,79 @@
 		"title": "device",
 		"desc": "Returns a dandy object containing the device `name` and `version`. If device is not defined (which is normally not the case since our libraries automatically collect this context), it will return `version` as `null` and `name` as `unknown`.",
 		"code": ".device();",
-		"output": "blah"
+		"output": "{  \r\n   \"id\":\"B5372DB0-C21E-11E4-8DFC-AA07A5B093DB\",\r\n   \"advertisingId\":\"7A3CBEA0-BDF5-11E4-8DFC-AA07A5B093DB\",\r\n   \"adTrackingEnabled\":true,\r\n   \"manufacturer\":\"Apple\",\r\n   \"model\":\"iPhone7,2\",\r\n   \"name\":\"maguro\",\r\n   \"type\":\"iOS\",\r\n   \"token\":\"ff15bc0c20c4aa6cd50854ff165fd265c838e5405bfeb9571066395b8c9da449\"\r\n}"
 	},
 	"userAgent": {
 		"title": "userAgent",
 		"desc": "Returns the user agent string.",
 		"code": ".userAgent();",
-		"output": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1"
+		"output": "'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1'"
 	},
 	"timezone": {
 		"title": "timezone",
 		"desc": "Returns the `context.timezone`",
 		"code": ".timezone();",
-		"output": "Europe/Amsterdam"
+		"output": "'Europe/Amsterdam'"
 	},
 	"timestamp": {
 		"title": "timestamp",
 		"desc": "Grabs the `timestamp`. Note that it just looks up the top level timestamp property. So it returns a string not a date.",
 		"code": ".timestamp();",
-		"output": "2016"
+		"output": "'2016'"
 	},
 	"channel": {
 		"title": "channel",
-		"desc": "Tells you where this message came from.",
+		"desc": "Tells you where this message came from. This field does not show in the debugger as it is an internal field.",
 		"code": ".channel();",
-		"output": "`server`, `mobile`, or `client`"
+		"output": "'server', 'mobile', or 'client'"
 	},
 	"ip": {
 		"title": "ip",
 		"desc": "Returns the IP address.",
 		"code": ".ip();",
-		"output": "10.0.0.2"
+		"output": "'10.0.0.2'"
 	},
 	"userId": {
 		"title": "userId",
 		"desc": "Returns the userId of the message.",
 		"code": ".userId();",
-		"output": "111"
+		"output": "'111'"
 	},
 	"zip": {
 		"title": "zip",
 		"desc": "Returns the zip code by looking up `traits.address.postalCode` or `traits.address.zip` or `properties.address.postalCode`  or `properties.address.zip`.",
 		"code": ".zip();",
-		"output": "02818"
+		"output": "'02818'"
 	},
 	"country": {
 		"title": "country",
 		"desc": "Returns `traits/properties.address.country`",
 		"code": ".country();",
-		"output": "US"
-	},"street": {
+		"output": "'US'"
+	},
+	"street": {
 		"title": "street",
 		"desc": "Returns `traits/properties.address.street`",
 		"code": ".street();",
-		"output": "19 Forest Lane"
-	},"state": {
+		"output": "'19 Forest Lane'"
+	},
+	"state": {
 		"title": "state",
 		"desc": "Returns `traits/properties.address.state`",
 		"code": ".state();",
-		"output": "RI"
-	},"city": {
+		"output": "'RI'"
+	},
+	"city": {
 		"title": "city",
 		"desc": "Returns `traits/properties.address.city`",
 		"code": ".city();",
-		"output": "East Greenwich"
-	},"region": {
+		"output": "'East Greenwich'"
+	},
+	"region": {
 		"title": "region",
 		"desc": "Returns `traits/properties.address.region`",
 		"code": ".region();",
 		"output": "undefined"
 	},
-	"sample": "\r\n{\r\n    \"anonymousId\": \"36437481-6d1c-4936-aa3a-cf646099d581\",\r\n    \"type\": \"track\",\r\n    \"timestamp\": \"2016\",\r\n    \"event\": \"Damn Daniel\",\r\n    \"userId\": \"111\",\r\n    \"properties\": {\r\n      \"shoes\": \"White Vans\",\r\n      \"address\": {\r\n            \"city\": :\"East Greenwich\", \r\n            \"state\": \"RI\", \r\n            \"country\": \"US\",\r\n            \"postalCode\": \"02818\",\r\n            \"street\": \"19 Forest Lane\"\r\n          }\r\n    },\r\n    \"integrations\": {\r\n      \"All\": true,\r\n      \"Mixpanel\": false,\r\n      \"Intercom\": {\r\n        \"unsubscribedFromEmails\": true\r\n      }\r\n    },\r\n    \"context\": {\r\n     \"ip\": \"10.0.0.2\",\r\n     \"device\": {\r\n        \"id\": \"B5372DB0-C21E-11E4-8DFC-AA07A5B093DB\",\r\n        \"advertisingId\": \"7A3CBEA0-BDF5-11E4-8DFC-AA07A5B093DB\",\r\n        \"adTrackingEnabled\": true,\r\n        \"manufacturer\": \"Apple\",\r\n        \"model\": \"iPhone7,2\",\r\n        \"name\": \"maguro\",\r\n        \"type\": \"iOS\",\r\n        \"token\": \"ff15bc0c20c4aa6cd50854ff165fd265c838e5405bfeb9571066395b8c9da449\"\r\n      },\r\n      \"app\": {\r\n        \"name\": \"Test\",\r\n        \"version\": \"1.0\"\r\n      },\r\n      \"os\": {\r\n        \"name\": \"Android\",\r\n        \"version\": \"7.0\"\r\n      },\r\n      \"network\": {\r\n        \"carrier\": \"some-carrier\",\r\n        \"wifi\": true\r\n      },\r\n      \"locale\": \"en-US\",\r\n      \"library\": {\r\n        \"name\": \"analytics.js\",\r\n        \"version\": \"2.11.1\"\r\n      },\r\n     \"timezone\": \"Europe\/Amsterdam\",\r\n     \"userAgent\": \"Mozilla\/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit\/601.1.46 (KHTML, like Gecko) Version\/9.0 Mobile\/13B143 Safari\/601.1\"\r\n    }\r\n  }"
+	"sample": "{\r\n    \"anonymousId\": \"36437481-6d1c-4936-aa3a-cf646099d581\",\r\n    \"type\": \"track\",\r\n    \"timestamp\": \"2016\",\r\n    \"event\": \"Damn Daniel\",\r\n    \"userId\": \"111\",\r\n    \"properties\": {\r\n      \"shoes\": \"White Vans\",\r\n      \"address\": {\r\n            \"city\": :\"East Greenwich\", \r\n            \"state\": \"RI\", \r\n            \"country\": \"US\",\r\n            \"postalCode\": \"02818\",\r\n            \"street\": \"19 Forest Lane\"\r\n          }\r\n    },\r\n    \"integrations\": {\r\n      \"All\": true,\r\n      \"Mixpanel\": false,\r\n      \"Intercom\": {\r\n        \"unsubscribedFromEmails\": true\r\n      }\r\n    },\r\n    \"context\": {\r\n     \"ip\": \"10.0.0.2\",\r\n     \"device\": {\r\n        \"id\": \"B5372DB0-C21E-11E4-8DFC-AA07A5B093DB\",\r\n        \"advertisingId\": \"7A3CBEA0-BDF5-11E4-8DFC-AA07A5B093DB\",\r\n        \"adTrackingEnabled\": true,\r\n        \"manufacturer\": \"Apple\",\r\n        \"model\": \"iPhone7,2\",\r\n        \"name\": \"maguro\",\r\n        \"type\": \"iOS\",\r\n        \"token\": \"ff15bc0c20c4aa6cd50854ff165fd265c838e5405bfeb9571066395b8c9da449\"\r\n      },\r\n      \"app\": {\r\n        \"name\": \"Test\",\r\n        \"version\": \"1.0\"\r\n      },\r\n      \"os\": {\r\n        \"name\": \"Android\",\r\n        \"version\": \"7.0\"\r\n      },\r\n      \"network\": {\r\n        \"carrier\": \"some-carrier\",\r\n        \"wifi\": true\r\n      },\r\n      \"locale\": \"en-US\",\r\n      \"library\": {\r\n        \"name\": \"analytics.js\",\r\n        \"version\": \"2.11.1\"\r\n      },\r\n     \"timezone\": \"Europe\/Amsterdam\",\r\n     \"userAgent\": \"Mozilla\/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit\/601.1.46 (KHTML, like Gecko) Version\/9.0 Mobile\/13B143 Safari\/601.1\"\r\n    }\r\n  }"
 }

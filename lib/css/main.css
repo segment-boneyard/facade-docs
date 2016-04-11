@@ -1,13 +1,70 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,300);
+
+.hero-font {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 300;
+	font-size: 50px;
+	/*margin-top: 20px;*/
+}
+
+/* Colors */
+
+p {
+	color: #333;
+}
+
+a {
+	background-color: #3CC76A;
+	border-radius: 4px;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover {
+	background-color: #50cd79;
+	cursor: pointer;
+}
+
+.active {
+	color: #3CC76A !important;
+}
+
+.code {
+	background-color: #f7f7f7;
+}
+
 /* Alignment */
 
 .ta-c {
 	text-align: center;
 }
 
+p {
+	font-size: 16px;
+	line-height: 23px;
+}
+
 /* Padding */
 
-.pt-lg {
-	padding-top: 10%;
+body {
+	padding: 70px 0;
+}
+
+a {
+	padding: 13px 20px;
+}
+
+.code {
+	padding: 15px;
+	border-radius: 4px;
+}
+
+/* Margin */
+
+a {
+	margin: 20px auto 0;
 }
 
 /* Navbar */
@@ -21,7 +78,7 @@
 }
 
 .navbar li {
-	color: blue;
+	color: #888D92;
 }
 
 .navbar li:hover {
@@ -32,12 +89,6 @@
 
 .debug {
 	border: 1px solid red;
-}
-
-/* Colors */
-
-.active {
-	color: green !important;
 }
 
 /* Normalize */

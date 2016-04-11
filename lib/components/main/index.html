@@ -1,4 +1,4 @@
-<div class="row col-xs-10 col-xs-offset-1 pt-lg">
+<div class="row col-xs-10 col-xs-offset-1">
 	<!-- Vertical Navbar -->
 	<div class="col-xs-3 navbar">
 		<ul>
@@ -13,13 +13,16 @@
 
 	<!-- Hero Title Component -->
 	<div class="col-xs-9">
-		<h1>{{ facade.data.title }}</h1>
+		<h1 class="hero-font">{{ facade.data.title }}</h1>
 		<p>{{ facade.data.desc }}</p>
-	</div>
-	<div class="col-xs-9">
-		<pre><code highlight-syntax>{{ facade.data.code }}</code></pre>
-		<p ng-show="facade.data.content">{{ facade.data.content }}</p>
-		<p ng-show="facade.data.output">Output: <code highlight-syntax>{{ facade.data.output }}</code></p>
-		<pre><code highlight-syntax>{{ facade.data.sample }}</code></pre>
+		<pre class="code"><code highlight-syntax>{{ facade.data.code }}</code></pre>
+		<pre><p ng-show="facade.data.content">{{ facade.data.content }}</p></pre>
+		<p ng-show="facade.data.output">Returns:</p> 
+		<div ng-hide="facade.ifIntroPage">
+			<pre class="code"><code highlight-syntax>{{ facade.data.output }}</code></pre>
+			<a ng-click="facade.toggleSamplePayload()" ng-hide="facade.toggleSample">Show sample payload</a>
+			<a ng-click="facade.toggleSamplePayload()" ng-show="facade.toggleSample">Hide sample payload</a>
+		</div>
+		<p><pre><code highlight-syntax ng-show="facade.toggleSample">{{ facade.data.sample }}</code></pre></p>
 	</div>
 </div>

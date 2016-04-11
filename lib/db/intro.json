@@ -1,6 +1,6 @@
 {	
-	"title": "Facade",
+	"title": "facade",
 	"desc": "Facade is a library of helper functions that makes reading and writing Segment integration code delightful.",
-	"content": "As you might guess, functions such as `track.event()`, `track.properties()`, and `track.userId()` are all Facade functions. The names of the functions allow you to quickly understand what pieces of data we are mapping.\n\nEvery `Integration` object's `prototype` is extended with Facade functions, meaning that you'll be able to use the Facade across all of our other various types of messages such as `.page()`, `.group()`, and `.identify()` calls.\n\nUnderstanding the full potential of the facade will elevate your techinical knowledge of our integration code tremendously!",
+	"content": "As you might guess, functions such as `track.event()`, `track.properties()`, and `track.userId()` are all Facade functions. The names of the functions allow you to quickly understand what pieces of data we are mapping for a given integration.\n\nEvery `Integration` object's `prototype` is extended with Facade functions, meaning that you'll be able to use the Facade across all of our other various types of messages such as `.page()`, `.group()`, `.identify()`, etc.\n\nUnderstanding the full potential of the facade will elevate your techinical knowledge of our integration code tremendously!",
 	"code": "function (track){\n   return {\n    event: track.event(),\n    properties: track.properties(),\n    time: track.timestamp(),\n    customer_properties: {\n      $id: track.userId(),\n      $name: track.name(),\n      $email: track.email()\n    }\n   };\n};"
 }

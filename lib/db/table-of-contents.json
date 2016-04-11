@@ -42,7 +42,7 @@
 			"category": "Page",
 			"sections": [
 				".category()",
-				".event()",
+				".event(name)",
 				".fullName()",
 				".name()",
 				".path()",

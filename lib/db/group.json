@@ -3,7 +3,7 @@
 		"title": "groupId",
 		"desc": "Returns the `groupId`.",
 		"code": ".groupId();",
-		"output": "0e8c78ea9d97a7b8185e8632"
+		"output": "'0e8c78ea9d97a7b8185e8632'"
 	},
 	"created": {
 		"title": "created",
@@ -27,19 +27,19 @@
 		"title": "name",
 		"desc": "Returns the `traits.name`.",
 		"code": ".name();",
-		"output": "Initech"
+		"output": "'Initech'"
 	},
 	"industry": {
 		"title": "industry",
 		"desc": "Returns `traits.industry`.",
 		"code": ".industry();",
-		"output": "Technology"
+		"output": "'Technology'"
 	},
 	"employees": {
 		"title": "employees",
 		"desc": "Returns `traits.employees`.",
 		"code": ".employees();",
-		"output": "Technology"
+		"output": "'Technology'"
 	},
 	"properties": {
 		"title": "properties",

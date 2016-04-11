@@ -1,109 +1,109 @@
 {
 	"traits(aliases)": {
 		"title": "traits(aliases)",
-		"desc": "Returns all the `traits`. You can also pass an optional object defining aliases. Note that the Facade will also add `traits.id` which is the same as `userId`.",
+		"desc": "Returns all the 'traits'. You can also pass an optional object defining aliases. Note that the Facade will also add 'traits.id' which is the same as 'userId'.",
 		"code": ".traits({ plan: \"tier\" });;",
 		"output": "{  \r\n   \"id\": \"111\",\r\n   \"name\":\"Peter Gibbons\",\r\n   \"email\":\"peter@initech.com\",\r\n   \"tier\":\"premium\",\r\n   \"logins\":5\r\n}"
 	},
 	"email": {
 		"title": "email",
-		"desc": "Tries to return the `traits.email` and if it is not defined, it will check the `userId`  and return that if it is a valid email.",
+		"desc": "Tries to return the 'traits.email' and if it is not defined, it will check the 'userId'  and return that if it is a valid email.",
 		"code": ".email();",
-		"output": "peter@initech.com"
+		"output": "'peter@initech.com'"
 	},
 	"created": {
 		"title": "created",
-		"desc": "Returns the `traits.created` and falls back on `traits.createdAt`.",
+		"desc": "Returns the 'traits.created' and falls back on 'traits.createdAt'.",
 		"code": ".created();",
-		"output": "Spec: Page - Segment"
+		"output": "'2015-02-23T22:28:55.111Z'"
 	},
 	"companyCreated": {
 		"title": "companyCreated",
-		"desc": "Returns `traits.company.created` and falls back on `traits.company.createdAt` and returns a `Date` object of it.",
+		"desc": "Returns 'traits.company.created' and falls back on 'traits.company.createdAt' and returns a 'Date' object of it.",
 		"code": ".companyCreated();",
 		"output": "undefined"
 	},
 	"name": {
 		"title": "name",
-		"desc": "Returns `traits.name` or optionally combines `traits.firstName` and `traits.lastName` if `traits.name` is not defined.",
+		"desc": "Returns 'traits.name' or optionally combines 'traits.firstName' and 'traits.lastName' if 'traits.name' is not defined.",
 		"code": ".name();",
-		"output": "Peter Gibbons"
+		"output": "'Peter Gibbons'"
 	},
 	"firstName": {
 		"title": "firstName",
-		"desc": "Returns `traits.firstName`. If only `traits.name` is available, it will split it and give you the first name.",
+		"desc": "Returns 'traits.firstName'. If only 'traits.name' is available, it will split it and give you the first name.",
 		"code": ".firstName();",
-		"output": "Peter"
+		"output": "'Peter'"
 	},
 	"lastName": {
 		"title": "lastName",
-		"desc": "Returns `traits.lastName`. If only `traits.name` is available, it will split it and give you the last name.",
+		"desc": "Returns 'traits.lastName'. If only 'traits.name' is available, it will split it and give you the last name.",
 		"code": ".lastName();",
-		"output": "Gibbons"
+		"output": "'Gibbons'"
 	},
 	"uid": {
 		"title": "uid",
-		"desc": "Returns the current user’s `userId`, and falls back on `traits.username` then `traits.email`.",
+		"desc": "Returns the current user’s 'userId', and falls back on 'traits.username' then 'traits.email'.",
 		"code": ".uid();",
-		"output": "97980cfea0067"
+		"output": "'97980cfea0067'"
 	},
 	"description": {
 		"title": "description",
-		"desc": "Returns `traits.description` and falls back on `traits.background`.",
+		"desc": "Returns 'traits.description' and falls back on 'traits.background'.",
 		"code": ".description()",
 		"output": "undefined"
 	},
 	"age": {
 		"title": "age",
-		"desc": "Returns `traits.age` and if not will fall back on a calculated birthday based no `traits.birthday`.",
+		"desc": "Returns 'traits.age' and if not will fall back on a calculated birthday based no 'traits.birthday'.",
 		"code": ".age();",
 		"output": "24"
 	},
 	"avatar": {
 		"title": "avatar",
-		"desc": "Returns `traits.avatar` or `traits.photoUrl` or `traits.avatarUrl`.",
+		"desc": "Returns 'traits.avatar' or 'traits.photoUrl' or 'traits.avatarUrl'.",
 		"code": ".avatar();",
 		"output": "undefined"
 	},
 	"position": {
 		"title": "position",
-		"desc": "Returns `traits.position` and falls back on `traits.jobTitle`.",
+		"desc": "Returns 'traits.position' and falls back on 'traits.jobTitle'.",
 		"code": ".position();",
 		"output": "undefined"
 	},
 	"username": {
 		"title": "username",
-		"desc": "Returns `traits.username`.",
+		"desc": "Returns 'traits.username'.",
 		"code": ".username();",
 		"output": "undefined"
 	},
 	"website": {
 		"title": "website",
-		"desc": "Returns `traits.website`.",
+		"desc": "Returns 'traits.website'.",
 		"code": ".website();",
 		"output": "undefined"
 	},
 	"phone": {
 		"title": "phone",
-		"desc": "Returns `traits.phone`.",
+		"desc": "Returns 'traits.phone'.",
 		"code": ".phone();",
 		"output": "undefined"
 	},
 	"address": {
 		"title": "address",
-		"desc": "Returns `traits.address`.",
+		"desc": "Returns 'traits.address'.",
 		"code": ".address();",
 		"output": "undefined"
 	},
 	"gender": {
 		"title": "gender",
-		"desc": "Returns `traits.gender`.",
+		"desc": "Returns 'traits.gender'.",
 		"code": ".gender();",
 		"output": "undefined"
 	},
 	"birthday": {
 		"title": "birthday",
-		"desc": "Returns `traits.birthday`.",
+		"desc": "Returns 'traits.birthday'.",
 		"code": ".birthday();",
 		"output": "undefined"
 	},

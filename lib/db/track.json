@@ -101,7 +101,7 @@
 		"title": "plan",
 		"desc": "Returns the `properties.plan`.",
 		"code": ".plan();",
-		"output": "Same JSON payload as below",
+		"output": "undefined",
 		"url": [88]
 	},
 	"orderId": {

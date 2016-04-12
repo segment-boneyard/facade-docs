@@ -1,5 +1,5 @@
 # Facade Documentation
 
-An API reference for `segmentio/facade`!
+An API reference for [segmentio/facade](https://github.com/segmentio/facade)!
 
-Link: segment-facade.herokuapp.com
+Link: https://segment-facade.herokuapp.com

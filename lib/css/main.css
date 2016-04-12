@@ -87,6 +87,8 @@ a {
 
 .navbar li {
 	color: #888D92;
+	font-weight: 300;
+	line-height: 20px;
 }
 
 .navbar li:hover {

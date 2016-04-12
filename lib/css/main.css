@@ -35,6 +35,14 @@ a:hover {
 	background-color: #f7f7f7;
 }
 
+.github-bg {
+	background-color: #4078c0;
+}
+
+.github-bg:hover {
+	background-color: #5584C1;
+}
+
 /* Alignment */
 
 .ta-c {

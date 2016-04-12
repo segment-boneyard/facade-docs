@@ -42,6 +42,7 @@
 			"category": "Page",
 			"sections": [
 				".category()",
+				".email()",
 				".event(name)",
 				".fullName()",
 				".name()",
@@ -86,7 +87,7 @@
 				".coupon()",
 				".currrency()",
 				".description()",
-				".disconut()",
+				".discount()",
 				".email()",
 				".id()",
 				".identify()",

@@ -3,109 +3,127 @@
 		"title": "traits(aliases)",
 		"desc": "Returns all the 'traits'. You can also pass an optional object defining aliases. Note that the Facade will also add 'traits.id' which is the same as 'userId'.",
 		"code": ".traits({ plan: \"tier\" });;",
-		"output": "{  \r\n   \"id\": \"111\",\r\n   \"name\":\"Peter Gibbons\",\r\n   \"email\":\"peter@initech.com\",\r\n   \"tier\":\"premium\",\r\n   \"logins\":5\r\n}"
+		"output": "{  \r\n   \"id\": \"111\",\r\n   \"name\":\"Peter Gibbons\",\r\n   \"email\":\"peter@initech.com\",\r\n   \"tier\":\"premium\",\r\n   \"logins\":5\r\n}",
+		"url": [56, 71]
 	},
 	"email": {
 		"title": "email",
 		"desc": "Tries to return the 'traits.email' and if it is not defined, it will check the 'userId'  and return that if it is a valid email.",
 		"code": ".email();",
-		"output": "'peter@initech.com'"
+		"output": "'peter@initech.com'",
+		"url": [79, 85]
 	},
 	"created": {
 		"title": "created",
 		"desc": "Returns the 'traits.created' and falls back on 'traits.createdAt'.",
 		"code": ".created();",
-		"output": "'2015-02-23T22:28:55.111Z'"
+		"output": "'2015-02-23T22:28:55.111Z'",
+		"url": [94, 97]
 	},
 	"companyCreated": {
 		"title": "companyCreated",
 		"desc": "Returns 'traits.company.created' and falls back on 'traits.company.createdAt' and returns a 'Date' object of it.",
 		"code": ".companyCreated();",
-		"output": "undefined"
+		"output": "undefined",
+		"url": [105, 110]
 	},
 	"name": {
 		"title": "name",
 		"desc": "Returns 'traits.name' or optionally combines 'traits.firstName' and 'traits.lastName' if 'traits.name' is not defined.",
 		"code": ".name();",
-		"output": "'Peter Gibbons'"
+		"output": "'Peter Gibbons'",
+		"url": [119, 126]
 	},
 	"firstName": {
 		"title": "firstName",
 		"desc": "Returns 'traits.firstName'. If only 'traits.name' is available, it will split it and give you the first name.",
 		"code": ".firstName();",
-		"output": "'Peter'"
+		"output": "'Peter'",
+		"url": [135, 141]
 	},
 	"lastName": {
 		"title": "lastName",
 		"desc": "Returns 'traits.lastName'. If only 'traits.name' is available, it will split it and give you the last name.",
 		"code": ".lastName();",
-		"output": "'Gibbons'"
+		"output": "'Gibbons'",
+		"url": [150, 161]
 	},
 	"uid": {
 		"title": "uid",
 		"desc": "Returns the current user’s 'userId', and falls back on 'traits.username' then 'traits.email'.",
 		"code": ".uid();",
-		"output": "'97980cfea0067'"
+		"output": "'97980cfea0067'",
+		"url": [169, 171]
 	},
 	"description": {
 		"title": "description",
 		"desc": "Returns 'traits.description' and falls back on 'traits.background'.",
 		"code": ".description()",
-		"output": "undefined"
+		"output": "undefined",
+		"url": [179, 181]
 	},
 	"age": {
 		"title": "age",
 		"desc": "Returns 'traits.age' and if not will fall back on a calculated birthday based no 'traits.birthday'.",
 		"code": ".age();",
-		"output": "24"
+		"output": "24",
+		"url": [193, 200]
 	},
 	"avatar": {
 		"title": "avatar",
 		"desc": "Returns 'traits.avatar' or 'traits.photoUrl' or 'traits.avatarUrl'.",
 		"code": ".avatar();",
-		"output": "undefined"
+		"output": "undefined",
+		"url": [213, 218]
 	},
 	"position": {
 		"title": "position",
 		"desc": "Returns 'traits.position' and falls back on 'traits.jobTitle'.",
 		"code": ".position();",
-		"output": "undefined"
+		"output": "undefined",
+		"url": [228, 231]
 	},
 	"username": {
 		"title": "username",
 		"desc": "Returns 'traits.username'.",
 		"code": ".username();",
-		"output": "undefined"
+		"output": "undefined",
+		"url": [237]
 	},
 	"website": {
 		"title": "website",
 		"desc": "Returns 'traits.website'.",
 		"code": ".website();",
-		"output": "undefined"
+		"output": "undefined",
+		"url": [238]
 	},
 	"phone": {
 		"title": "phone",
 		"desc": "Returns 'traits.phone'.",
 		"code": ".phone();",
-		"output": "undefined"
+		"output": "undefined",
+		"url": [240]
 	},
 	"address": {
 		"title": "address",
 		"desc": "Returns 'traits.address'.",
 		"code": ".address();",
-		"output": "undefined"
+		"output": "undefined",
+		"url": [242]
 	},
 	"gender": {
 		"title": "gender",
 		"desc": "Returns 'traits.gender'.",
 		"code": ".gender();",
-		"output": "undefined"
+		"output": "undefined",
+		"url": [243]
 	},
 	"birthday": {
 		"title": "birthday",
 		"desc": "Returns 'traits.birthday'.",
 		"code": ".birthday();",
-		"output": "undefined"
+		"output": "undefined",
+		"url": [244]
 	},
 	"sample": "{  \r\n   \"anonymousId\":\"507f191e810c19729de860ea\",\r\n   \"channel\":\"browser\",\r\n   \"context\":{  \r\n      \"ip\":\"8.8.8.8\",\r\n      \"userAgent\":\"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/40.0.2214.115 Safari\/537.36\"\r\n   },\r\n   \"integrations\":{  \r\n      \"All\":true,\r\n      \"Mixpanel\":false,\r\n      \"Salesforce\":false\r\n   },\r\n   \"messageId\":\"022bb90c-bbac-11e4-8dfc-aa07a5b093db\",\r\n   \"receivedAt\":\"2015-02-23T22:28:55.387Z\",\r\n   \"sentAt\":\"2015-02-23T22:28:55.111Z\",\r\n   \"timestamp\":\"2015-02-23T22:28:55.111Z\",\r\n   \"traits\":{  \r\n      \"name\":\"Peter Gibbons\",\r\n      \"age\":24,\r\n      \"email\":\"peter@initech.com\",\r\n      \"plan\":\"premium\",\r\n      \"logins\":5,\r\n      \"createdAt\":\"2015-02-23T22:28:55.111Z\"\r\n   },\r\n   \"type\":\"identify\",\r\n   \"userId\":\"97980cfea0067\",\r\n   \"version\":\"1.1\"\r\n}"
 }
